@@ -30,7 +30,8 @@ public class Game {
             console().printf("Error count: %d \n", errorCount);
             console().printf("Wrong letters: %s \n", String.join(",", wrongLetters
                     .toString()
-                    .replace("[]", "")));
+                    .replace("[", "")
+                    .replace("]", "")));
 
             if (gameState != GameState.WIN) {
                 console().printf(ConsoleDrawer.ASCII_GALLOW_SPRITES.get(errorCount));

@@ -124,6 +124,7 @@ public class ConsoleDrawer {
                 System.out.print(ANSI_CLEAR_SCREEN);
                 System.out.flush();
             }
+
         } catch (Exception e) {
             System.console().printf(ANSI_ERROR_MESSAGE_COLOR
                     + "Failed to clear screen"

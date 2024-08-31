@@ -15,7 +15,7 @@ public class WordPicker {
 
     private void fillWordList() {
         try (BufferedReader reader = new BufferedReader(
-                new InputStreamReader(getClass().getResourceAsStream("words.txt")))) {
+                new InputStreamReader(getClass().getResourceAsStream("words/words.txt")))) {
             String word;
 
             while ((word = reader.readLine()) != null) {
